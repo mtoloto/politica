@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="1004 3523 21.26 25.249">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <path id="filter" class="cls-1" d="M306.07,411.156l.14.163v2.241a.39.39,0,0,1-.14.3l-7,5.89v13a.4.4,0,0,1-.67.3l-4.18-3.83a.4.4,0,0,1-.13-.29v-9.15l-7-5.88a.4.4,0,0,1-.14-.3v-3.28a.4.4,0,0,1,.4-.4h18.41c.221,0,.26,1.045.26,1.266Zm.214,1.213" transform="translate(718.05 3114.08)"/>
+</svg>
