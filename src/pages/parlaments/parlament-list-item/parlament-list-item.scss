@@ -1,0 +1,59 @@
+.bloco-perfil {
+	background: #fff;
+    padding: 8px;
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.3) 2px 4px 20px 0px; 
+    margin-bottom: 15px;
+    cursor: pointer; 
+}
+
+.space-img-perfil {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    background-size: cover;
+    background-position:  top;
+}
+
+.title-perfil {
+    font-size: 20px;
+    line-height: 22px;
+    color: #000000;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: left;
+    letter-spacing: -1px; 
+    margin: 17px 0px;
+    min-height: 80px;
+}
+
+.cargo-perfil {
+    font-size: 15px;
+    color: #6F6F6F;
+    font-weight: 300;
+    text-align: left;
+}
+
+.item-estado-perfil {
+    background: #000;
+    border-radius: 25px;
+    padding: 1px 5px;
+    color: #fff;
+}
+
+
+.rodape-bloco-perfil {
+    display: flex;
+    margin-top: 17px;
+    min-height: 50px;
+}
+
+.estado-perfil {
+    width: 50%;
+    text-align: right;
+}
+
+.partido-perfil {
+    width: 50%;
+}

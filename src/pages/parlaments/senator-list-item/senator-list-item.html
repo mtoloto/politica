@@ -1,0 +1,16 @@
+<div *ngIf="senator" class="bloco-perfil">
+  <div class="space-img-perfil" [style.backgroundImage]="'url(' + senator.IdentificacaoParlamentar.UrlFotoParlamentar + ')'">
+
+  </div>
+  <div class="title-perfil">{{senator.IdentificacaoParlamentar.NomeCompletoParlamentar}}</div>
+  <div class="cargo-perfil">{{senator.Mandato.DescricaoParticipacao}}</div>
+
+  <div class="rodape-bloco-perfil">
+    <div class="partido-perfil">
+      {{senator.IdentificacaoParlamentar.SiglaPartidoParlamentar}}
+    </div>
+    <div class="estado-perfil">
+      <span class="item-estado-perfil">{{senator.IdentificacaoParlamentar.UfParlamentar}}</span>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,61 @@
+<!--
+  Generated template for the ParlamentsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-header>
+  <ion-navbar no-border-bottom>
+    <ion-title>
+      {{pet}}
+    </ion-title>
+  </ion-navbar>
+
+  <ion-toolbar no-border-top>
+    <ion-segment [(ngModel)]="pet">
+      <ion-segment-button value="Deputados Federais">
+        Deputados Federais
+      </ion-segment-button>
+      <ion-segment-button value="Senadores" (click)="loadSenators()">
+        Senadores
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+
+
+
+
+<ion-content [ngSwitch]="pet" class="background-parlamentar">
+
+  <div *ngSwitchCase="'Deputados Federais'">
+    <ion-grid>
+      <ion-row>
+        <ion-col col-4 *ngFor="let parlament of parlaments">
+          <parlament-list-item [parlament]="parlament"></parlament-list-item>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+      <ion-infinite-scroll-content loadingText="Carregando...">
+      </ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+  </div>
+
+  <ion-grid *ngSwitchCase="'Senadores'">
+    <ion-row>
+      <ion-col col-4 *ngFor="let senator of senators">
+        <senator-list-item [senator]="senator"></senator-list-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
+
+<ion-footer no-border>
+  <ion-toolbar>
+    <ion-title>Footer</ion-title>
+  </ion-toolbar>
+</ion-footer>

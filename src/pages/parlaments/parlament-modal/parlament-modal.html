@@ -1,0 +1,25 @@
+<ion-content padding class="background-green vertical-align-content" center>
+  <ion-fab top right>
+    <button (click)="dismiss()" ion-fab class="close-button" mini>
+      <ion-icon name="close"></ion-icon>
+    </button>
+  </ion-fab>
+  <ion-grid>
+    <ion-row center>
+      <ion-col center>
+        <div class="space-img-perfil2" [style.backgroundImage]="'url(' + parlamentModal.foto + ')'"></div>
+        <h1 text-uppercase no-padding no-margin>Welcome</h1>
+        <hr/>
+        <h3 no-padding no-margin>{{parlamentModal.nome}}</h3>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content> 
+
+<!-- parlamentModal.email = "teste@asd.com";
+    parlamentModal.nome = this.parlament.nome;
+    parlamentModal.foto = this.parlament.urlFoto;
+    parlamentModal.telefone = "(19) 99412 9292";
+    parlamentModal.tipo = "Deputado";
+    parlamentModal.uf = this.parlament.siglaUf;
+    parlamentModal.logoPartido = this.parlament.partido.urlLogo; -->

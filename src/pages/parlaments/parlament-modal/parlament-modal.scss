@@ -1,0 +1,40 @@
+.background-green{
+    background-color: #00b158; 
+}
+
+.close-button{ 
+    background-color: transparent; 
+    box-shadow: none;
+}
+
+.close-button ion-icon{
+    font-size: 50px;
+    color: #2c2c2c;
+}
+
+.fab-md.activated{
+    background: transparent;
+    box-shadow: none;
+}
+
+.fab-ios.activated{
+    background: transparent;
+    box-shadow: none;
+}
+
+.vertical-align-content > *
+{
+     display: flex!important;
+     align-content: center!important;
+     align-items: center!important;
+     height: 100%;
+} 
+
+.space-img-perfil2 {
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    margin: 0 auto;
+    background-size: cover;
+    background-position:  top;
+}

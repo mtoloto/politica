@@ -1,0 +1,16 @@
+<div *ngIf="parlament" class="bloco-perfil" (click)="openModalWithParams()">
+  <div class="space-img-perfil" [style.backgroundImage]="'url(' + parlament.urlFoto + ')'">
+
+  </div>
+  <div class="title-perfil">{{parlament.nome}}</div>
+  <div class="cargo-perfil">Deputado Federal</div>
+
+  <div class="rodape-bloco-perfil">
+    <div class="partido-perfil">
+      <img *ngIf="parlament.partido" class="img-partido" src="{{parlament.partido.urlLogo}}">
+    </div>
+    <div class="estado-perfil">
+      <span class="item-estado-perfil">{{parlament.siglaUf}}</span>
+    </div>
+  </div>
+</div>
