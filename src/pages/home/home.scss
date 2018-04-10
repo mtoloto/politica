@@ -1,3 +1,139 @@
+ 
 page-home {
+    
+    .tutorial-page {
 
+      .search-bar{
+        padding: 0;
+        min-height: 50px;
+      } 
+
+      .searchbar-input{
+        height: 50px;
+        border-radius: 10px;
+      }
+
+      .link-complete-list-wrapper{
+        text-align: center;
+        padding: 15px 0;
+      }
+      .complete-list{  
+
+        color: #fff;
+        width: 100%;
+      }
+
+      .searchbar-ios .searchbar-search-icon{
+        top: 20px;
+      }
+      .searchbar-search-icon{
+        top: 15px;
+      }
+
+      .btn-green{
+        background-color: #00B158; 
+      }
+
+      .btn-yellow{
+        background-color: #ffbc15; 
+      }
+
+     
+      .btn{
+        color: #000;
+        border-radius: 10px;
+        font-size: 16px;
+        padding: 25px 0;
+        text-transform: none;
+        font-weight: 400;
+      }
+
+        .content-all{
+            position: relative;
+            height: 100%;
+            width: 100%;
+        }
+
+        .slide-background{
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: 1;
+        }
+
+        .overlay-home{
+            background-color: rgba(0,0,0,0.3);
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: 2;
+        } 
+        .action-home-bottom{
+            left: 0;
+            bottom: 0;
+            width: 100%;  
+            z-index: 3;  
+            position: fixed;
+            padding: 15px;
+            color: #fff;
+
+            h3{
+              text-transform: uppercase;
+              font-weight: 100;
+              font-family: 'Oswald'
+            }
+        }
+        .slider-background{
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+            text-align: right;
+
+            .credit-photo{
+              color: #fff; 
+              margin-right: 15px;
+              font-size: 14px;
+              font-weight: 300;
+            }
+        }
+        .toolbar-background {
+          background: #fff;
+          border-color: transparent;
+        }
+      
+        .slide-zoom {
+          height: 100%;
+        }
+      
+        .slide-title {
+          margin-top: 2.8rem;
+        }
+      
+        .slide-image {
+          max-height: 50%;
+          max-width: 60%;
+          margin: 18px 0;
+        }
+      
+        b {
+          font-weight: 500;
+        }
+      
+        p {
+          padding: 0 40px;
+          font-size: 14px;
+          line-height: 1.5;
+          color: #60646B;
+      
+          b {
+            color: #000000;
+          }
+        }
+      
+      }
 }
