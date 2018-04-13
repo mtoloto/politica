@@ -38,3 +38,68 @@
     background-size: cover;
     background-position:  top;
 }
+
+.title-perfil-info {
+    font-size: 44px;
+    line-height: 41px;   
+    display: table-caption;
+    margin: 11px 0px !important;    
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: left;
+    letter-spacing: -1px;
+}
+
+.cargo-perfil {
+    font-weight: 300;
+}
+
+.black {
+	color: #000 !important;
+}
+
+.rodape-bloco-perfil {
+	display: flex;
+	margin-top: 17px;	
+}
+
+.estado-perfil-info {   
+   text-align: left;
+}
+
+.space-btn {
+	margin-bottom: 14px;
+}
+
+.bloco-perfil-info {
+    padding: 31px; 
+ }
+
+ .largura-full {
+	width: 100% !important;
+}
+
+.shadow-bg-clean {
+	box-shadow: rgba(0, 0, 0, 0.1607843137254902) 4px 4px 12px 0px;
+}
+
+.btn-green{
+    background-color: #00B158; 
+  }
+
+.btn-yellow{
+    background-color: #ffbc15; 
+}
+
+.btn{
+    color: #000;
+    border-radius: 8px;
+    font-size: 16px;
+    padding: 25px 0;
+    text-transform: none;
+    font-weight: 400;
+}
+
+.btn-bg-white {
+	background: #fff;
+}

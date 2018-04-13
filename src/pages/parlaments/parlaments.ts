@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, NavParams, ViewController, Platform } from 'ionic-angular';
 import { PopoverController } from 'ionic-angular';
 import { ParlamentProvider } from "../../providers/parlament/parlament";
+import { AlertController } from 'ionic-angular';
 
 /**
  * Generated class for the ParlamentsPage page.
@@ -23,18 +24,21 @@ export class ParlamentsPage {
   pet: string = "Deputados Federais";
   isAndroid: boolean = false;
   senatorsLoaded: boolean = false;
+  testRadioOpen: boolean;
+  testRadioResult;
 
   constructor(public navCtrl: NavController,
     public navParams: NavParams,
     private parlamentProvider: ParlamentProvider,
     public popoverCtrl: PopoverController,
+    public alerCtrl: AlertController,
     platform: Platform) {
 
     this.isAndroid = platform.is('android');
 
     parlamentProvider.getDeputies(this.page).then((res: any) => {
       this.page = this.page + 1;
-      this.parlaments = res.dados; 
+      this.parlaments = res.dados;
     }, (err) => {
     });
   }
@@ -46,7 +50,70 @@ export class ParlamentsPage {
         this.senatorsLoaded = true;
       }, (err) => {
       });
-  }  
+  }
+
+  doRadio() {
+    let alert = this.alerCtrl.create();
+    alert.setTitle('Lightsaber color');
+
+    alert.addInput({
+      type: 'radio',
+      label: 'Blue',
+      value: 'blue',
+      checked: true
+    });
+
+    alert.addInput({
+      type: 'radio',
+      label: 'Green',
+      value: 'green'
+    });
+
+    alert.addInput({
+      type: 'radio',
+      label: 'Red',
+      value: 'red'
+    });
+
+    alert.addInput({
+      type: 'radio',
+      label: 'Yellow',
+      value: 'yellow'
+    });
+
+    alert.addInput({
+      type: 'radio',
+      label: 'Purple',
+      value: 'purple'
+    });
+
+    alert.addInput({
+      type: 'radio',
+      label: 'White',
+      value: 'white'
+    });
+
+    alert.addInput({
+      type: 'radio',
+      label: 'Black',
+      value: 'black'
+    });
+
+    alert.addButton('Cancel');
+    alert.addButton({
+      text: 'Ok',
+      handler: data => {
+        console.log('Radio data:', data);
+        this.testRadioOpen = false;
+        this.testRadioResult = data;
+      }
+    });
+
+    alert.present().then(() => {
+      this.testRadioOpen = true;
+    });
+  }
+
 
   presentPopover(myEvent) {
     let popover = this.popoverCtrl.create(PopoverPage);

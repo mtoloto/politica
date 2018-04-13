@@ -6,11 +6,20 @@
   </ion-fab>
   <ion-grid>
     <ion-row center>
-      <ion-col center>
-        <div class="space-img-perfil2" [style.backgroundImage]="'url(' + parlamentModal.foto + ')'"></div>
-        <h1 text-uppercase no-padding no-margin>Welcome</h1>
-        <hr/>
-        <h3 no-padding no-margin>{{parlamentModal.nome}}</h3>
+      <ion-col center class="bloco-perfil-info">
+        <div class="space-img-perfil2" [style.backgroundImage]="'url(' + parlamentModal.foto + ')'"></div>    
+        <div no-padding no-margin class="title-perfil-info">{{parlamentModal.nome}}</div>
+        <div class="cargo-perfil black">{{parlamentModal.tipo}}</div>
+        <div class="cargo-perfil black">{{parlamentModal.email}}</div>
+
+
+        <div class="space-btn">        
+          <button ion-button class="btn btn-yellow largura-full shadow-bg-clean" round full>Ligar {{parlamentModal.telefone}}</button>
+          </div>
+          <div class="space-btn">
+            <button ion-button class="btn btn-bg-white largura-full shadow-bg-clean" round full>Enviar e-mail</button>
+          </div>       
+
       </ion-col>
     </ion-row>
   </ion-grid>

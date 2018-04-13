@@ -1,11 +1,61 @@
 page-parlaments {
+
+    .title-top  {
+        color:#fff !important;
+        text-transform: capitalize !important;
+        font-size: 15px !important;
+    }
+    
     .background-parlamentar{
         background: url('../assets/imgs/background2.jpg') no-repeat center;
         color: #fff;
+        background-size: cover;
     }
   
     .infinite-loading-text{
         color: #fff
     }
+
+    .background-toobar {
+        background: #0b1021;
+    }
+
+    .btn-filter {
+        background: #fff;
+        border-radius: 8px;
+        font-size: 13px;
+        color: #000;
+        text-transform: capitalize;
+        height: 37px !important;
+    }
+
+    .toolbar .searchbar-ios .searchbar-input {
+        height: 37px !important;
+    }
+
+    .searchbar-md .searchbar-input {
+        height: 37px !important;        
+        border-radius: 8px !important;   
+        padding: 6px 11px 6px 44px;    
+      } 
+
+      .toolbar-background-md {
+        border-color: none;
+        background:rgba(0, 0, 0, 0);
+      }
+
+      .toolbar-background-ios {
+       background:rgba(0, 0, 0, 0);    
+      }
+
+      .toolbar .searchbar-ios .searchbar-input {
+        background: rgb(255, 255, 255);
+    }
+
+    .segment-md .segment-button.activated, .segment-md .segment-button.segment-activated {
+        border-color: #ffbc15;
+    }
+    
+      
 }
  

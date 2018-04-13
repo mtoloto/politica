@@ -6,6 +6,8 @@ page-home {
       .search-bar{
         padding: 0;
         min-height: 50px;
+        background: #fff;
+        border-radius: 8px;
       } 
 
       .searchbar-input{
@@ -41,7 +43,7 @@ page-home {
      
       .btn{
         color: #000;
-        border-radius: 10px;
+        border-radius: 8px;
         font-size: 16px;
         padding: 25px 0;
         text-transform: none;
